@@ -1,0 +1,41 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <!-- <div class="aboutTopper">
+    <img src="/wp-content/themes/beBrave/static/img/logoIcon.svg" class="aboutTopper-img">
+    <h2 class="aboutTopper-h1">Thanks for listening!</h2>
+  </div> -->
+  <div class="aboutText">
+    <!-- <img src="/wp-content/themes/beBrave/static/img/logoIcon.svg" class="aboutTopper-img"> -->
+    <h2 class="about-h1">What&rsquo;s This All About</h2>
+    <p class="aboutText-p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi exercitationem odit sapiente quisquam ipsum, eveniet molestiae ut sint, at fuga dolorum laboriosam nihil nam enim aperiam temporibus! Nisi, tempora, et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi exercitationem odit sapiente quisquam ipsum, eveniet molestiae ut sint, at fuga dolorum laboriosam nihil nam enim aperiam temporibus! Nisi, tempora, et.</p>
+  </div>
+  <div class="aboutProfiles">
+    <div class="aboutProfiles-width">
+      <!-- <h2 class="aboutProfiles-overline">This is who we are</h2> -->
+
+      <h2 class="about-h1">Who We Are</h2>
+      <ul class="aboutProfiles-grid">
+        <li class="aboutProfiles-gridItem">
+          <div class="aboutProfiles-imgMod"><img src="/wp-content/themes/beBrave/static/img/david.jpg" class="aboutProfiles-img"></div>
+          <h4 class="aboutProfiles-gridName">David Tanklefsky</h4>
+          <p class="aboutProfiles-gridText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis consequatur hic harum odit neque tempore impedit sunt eveniet dolore tempora. Eius maxime, culpa quos ipsa aperiam aut accusamus voluptatem vel!</p>
+        </li>
+        <li class="aboutProfiles-gridItem">
+          <div class="aboutProfiles-imgMod"><img src="/wp-content/themes/beBrave/static/img/chris.jpg" class="aboutProfiles-img"></div>
+          <h4 class="aboutProfiles-gridName">Chris Delorenzo</h4>
+          <p class="aboutProfiles-gridText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis consequatur hic harum odit neque tempore impedit sunt eveniet dolore tempora. Eius maxime, culpa quos ipsa aperiam aut accusamus voluptatem vel!</p>
+        </li>
+        <li class="aboutProfiles-gridItem">
+          <div class="aboutProfiles-imgMod"><img src="/wp-content/themes/beBrave/static/img/nathan.jpg" class="aboutProfiles-img"></div>
+          <h4 class="aboutProfiles-gridName">Nathan Hass</h4>
+          <p class="aboutProfiles-gridText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis consequatur hic harum odit neque tempore impedit sunt eveniet dolore tempora. Eius maxime, culpa quos ipsa aperiam aut accusamus voluptatem vel!</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="aboutContact">
+   <h2 class="about-h1">Get in touch</h2>
+   <div class="aboutContact-form">{{post.content}}</div>
+  </div>
+{% endblock %}

@@ -1,0 +1,157 @@
+.aboutTopper {
+  padding: 50px;
+  text-align: center;
+  background-color: #EAE1D9;
+}
+
+.aboutTopper-img {
+  width: 50px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.about-h1 {
+  text-align: center;
+  font-size: 30px;
+  // font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #333;
+  @include mq(500px) {
+    font-size: 45px;
+  }
+}
+
+.aboutText {
+  background-color: $red;
+  padding: 60px 20px 80px;
+}
+
+
+.aboutText-p {
+  line-height: 150%;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include mq(500px) {
+    font-size: 22px;
+  }
+}
+
+.aboutProfiles {
+  padding: 60px 10px;
+}
+
+.aboutProfiles-grid {
+  @include mq(700px) {
+    @include media-grid(3, 50px, '.aboutProfiles-gridItem');
+  }
+}
+
+.aboutProfiles-width {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutProfiles-imgMod {
+  padding: 40px 40px 20px;
+}
+
+.aboutProfiles-img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 120px;
+}
+
+.aboutProfiles-gridName {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  &:after {
+    @include pseudo(n n 0 50%);
+    height: 6px;
+    background-color: $red;
+    width: 50px;
+    margin-left: -25px;
+  }
+}
+
+.aboutProfiles-gridText {
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.aboutProfiles-overline {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.aboutContact {
+  min-height: 600px;
+  background-color: #f2f2f2;
+  padding: 60px 10px;
+}
+
+.aboutContact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  > p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 150%;
+    margin: 0 auto 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    @include mq(500px) {
+      font-size: 22px;
+    }
+  }
+}
+
+#fscf_email1,
+#fscf_field1_2,
+#fscf_field1_3,
+#fscf_name1 {
+  @include input-default;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 5px;
+  font-family: $font;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+#fscf_div_field1_0,
+#fscf_div_field1_1,
+#fscf_div_field1_2,
+#fscf_div_field1_3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#fscf_submit_div1 {
+  text-align: center;
+}
+
+#fscf_submit1 {
+  @include input-default;
+  font-family: $font;
+  background-color: $red;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 40px 8px;
+  font-size: 15px;
+  display: inline-block;
+}

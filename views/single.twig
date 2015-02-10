@@ -1,0 +1,55 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<div class="article article--{{post.title|sanitize}} article--{{post.color|sanitize}}">
+
+		<div class="article-topper">
+		<div class="qs-container" data-qs-url="{{post.link}}">
+			<a class="qs-link" data-qs-service="twitter" target="_blank"><span class="twitter-icon"></span></a>
+			<a class="qs-link" data-qs-service="facebook-share" target="_blank"><span class="facebook-icon"></span></a>
+		</div>
+			<img class="article-topperImg" src={{TimberImage(post.illustration).src}}>
+		</div>
+		<article class="article-width">
+			<div class="article-hGroup">
+				<h1 class="article-h1">{{post.title}}</h1>
+			</div>
+
+			<div class="sc-mod">
+				<a href="{{post.soundcloud}}" class="sc-player">Listen to Brian Boyer discuss child birth</a>
+			</div>
+			<div class="article-text">
+				{{post.content}}
+			</div>
+			{% for media_item in post.get_field('page_content') %}
+				{% if media_item.acf_fc_layout == 'description' %}
+				{% elseif media_item.acf_fc_layout == 'content_images' %}
+					<div class="article-images">
+						<img src="{{TimberImage(media_item.image).src}}" class="article-image" />
+					</div>
+				{% endif %}
+			{% endfor %}
+			<div class="article-social">
+				<a class="article-social--website" href="#"></a>
+				<ul class="article-socialList">
+					<li class="article-socialItem"><a href="#" class="article-socialLink"></a></li>
+					<li class="article-socialItem"><a href="#" class="article-socialLink"></a></li>
+					<li class="article-socialItem"><a href="#" class="article-socialLink"></a></li>
+				</ul>
+			</div>
+
+		</article>
+	</div>
+
+{% endblock %}
+
+{% block footer_scripts %}
+	<script src="{{site.theme.path}}/components/jquery/jquery.js"></script>
+	<script src="{{site.theme.path}}/components/QuickShare/dist/quickshare.min.js"></script>
+	<script src="{{site.theme.path}}/components/fitvids/jquery.fitvids.js"></script>
+	<script src="{{site.theme.path}}/static/js/sc-player.js"></script>
+	<script src="{{site.theme.path}}/static/js/soundcloud.player.api.js"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+	<script src="http://d2v52k3cl9vedd.cloudfront.net/plangular/2.0-beta-1/ng-plangular.min.js"></script> -->
+{% endblock %}

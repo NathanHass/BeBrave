@@ -1,0 +1,56 @@
+.nav-logoMod {
+	display: block;
+	width: 100px;
+	float: left;
+	@include mq(500px) {
+		width: 140px;
+	}
+}
+
+.nav-logo {
+	width: 100%;
+}
+
+.nav {
+	position: relative;
+	z-index: 1;
+	@include box-shadow(0 0px 4px rgba(0,0,0,.1));
+}
+
+.nav-width {
+	max-width: 990px;
+	margin: 0 auto;
+	padding: 12px 15px;
+	@include clearfix;
+}
+
+.nav-listItem {
+	display: inline-block;
+	margin-left: 16px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	padding: 2px 2px 0px;
+	border-bottom: 2px solid rgba(68,68,68,0);
+	@include trans;
+	&:hover {
+		border-bottom: 2px solid rgba(68,68,68,1);
+	}
+	@include mq(500px) {
+		margin-left: 30px;
+		font-size: 16px;
+	}
+}
+
+.nav-trigger {
+	display: none;
+}
+.nav-list {
+	float: right;
+	padding-top: 10px;
+	@include mq(500px) {
+		padding-top: 15px;
+	}
+}
+

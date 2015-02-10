@@ -1,0 +1,14 @@
+{
+  "name": "plangular",
+  "homepage": "https://github.com/jxnblk/plangular",
+  "_release": "5021a86dc2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5021a86dc2c399a86257120b126904a34c2db33a"
+  },
+  "_source": "https://github.com/jxnblk/plangular.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/jxnblk/plangular.git",
+  "_direct": true
+}

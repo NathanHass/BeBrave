@@ -1,0 +1,18 @@
+{
+  "name": "Random House Books",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "Upbase": "git@github.com:Upstatement/upbase.git",
+    "modernizr": "~2.8.3",
+    "plangular": "https://github.com/jxnblk/plangular.git",
+    "QuickShare": "~1.2.9",
+    "fitvids": "~1.1.0",
+    "vue": "~0.11.5"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

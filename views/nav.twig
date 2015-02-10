@@ -1,0 +1,14 @@
+<header class="nav">
+    <div class="nav-width">
+        <a class="nav-logoMod" href="/" title="Timber" rel="home">
+            <img src="/wp-content/themes/beBrave/static/img/logo.svg" class="nav-logo"/>
+        </a>
+        <ul class="nav-list">
+        {% for item in menu.items %}
+            <li class="nav-listItem nav-listItem--{{item.type}}">
+                <a href="{{item.link}}" class="nav-listLink">{{item.title}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</header>

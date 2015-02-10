@@ -1,0 +1,10 @@
+{% extends "base.twig" %}
+
+{% block content %}
+		<div class="outer-tease-mod">
+			{% for post in posts %}
+				{% include ['tease.twig'] %}
+			{% endfor %}
+		</div>
+
+{% endblock %}

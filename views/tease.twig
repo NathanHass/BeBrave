@@ -1,0 +1,15 @@
+{% block content %}
+	<div class="tease-mod tease--{{post.title|sanitize}} tease--{{post.color|sanitize}}">
+		<a href="{{post.link}}" class="tease-img-mod">
+			<img class="tease-img" src={{TimberImage(post.illustration).src}}>
+		</a>
+		<div class="tease-text-mod">
+			<a href="{{post.link}}" class="tease-name-mod">
+				<h5 class="tease-name">{{post.title}}</h5>
+			</a>
+			<i class="tease-underline">{{post.description}}</i>
+			<i class="tease-date">{{post.post_date_gmt|time_ago}}</i>
+			<p class="tease-text">{{post.tease_text}}</p>
+		</div>
+	</div>
+{% endblock %}

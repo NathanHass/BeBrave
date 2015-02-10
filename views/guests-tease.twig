@@ -1,0 +1,15 @@
+{% block content %}
+	<a href="{{post.link}}" class="guestTease-mod guestTease--{{post.title|sanitize}} guestTease--{{post.color|sanitize}}">
+		<div class="guestTease-width">
+			<div class="guestTease-img-mod">
+				<img class="guestTease-img" src="{{TimberImage(post.illustration).src}}">
+			</div>
+			<div class="guestTease-textMod">
+				<div class="guestTease-name-mod">
+					<h4 class="guestTease-name">{{post.title}}</h4>
+					<p class="guestTease-type">{{post.description}}</p>
+				</div>
+			</div>
+		</div>
+	</a>
+{% endblock %}
