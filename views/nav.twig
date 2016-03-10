@@ -3,10 +3,10 @@
         <a class="nav-logoMod" href="/" title="Timber" rel="home">
             <img src="/wp-content/themes/beBrave/static/img/logo.svg" class="nav-logo"/>
         </a>
+        <h3 class="nav-tag">Conversations with young creative people</h3>
         <ul class="nav-list">
-        {% for item in menu.items %}
-            <li class="nav-listItem nav-listItem--{{item.type}}">
-                <a href="{{item.link}}" class="nav-listLink">{{item.title}}</a>
+        {% for item in menu.get_items %}
+            <li class="nav-listItem {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_link}}">{{item.title}}</a>
             </li>
         {% endfor %}
         </ul>

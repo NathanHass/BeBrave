@@ -377,7 +377,7 @@ body {
 }
 @media (min-width: 500px) {
   .tease-img {
-    max-height: 300px;
+    max-height: 50vh;
   }
 }
 
@@ -393,7 +393,7 @@ body {
 }
 
 .tease-name {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 5px 20px 6px;
@@ -418,9 +418,9 @@ body {
 .tease-underline {
   display: block;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 19px;
   color: #999;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .tease-date {
@@ -431,6 +431,10 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.page {
+  background: #222;
 }
 
 .nav-logoMod {
@@ -452,6 +456,7 @@ body {
   position: relative;
   z-index: 1;
   box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .nav-width {
@@ -490,11 +495,26 @@ body {
 
 .nav-list {
   float: right;
-  padding-top: 10px;
+  padding-top: 13px;
 }
 @media (min-width: 500px) {
   .nav-list {
-    padding-top: 15px;
+    padding-top: 20px;
+  }
+}
+
+.nav-tag {
+  float: left;
+  padding: 14px 0px 0px 30px;
+  font-size: 15px;
+  margin: 5px 0 5px 0;
+  font-weight: 600;
+  color: #999;
+  display: none;
+}
+@media (min-width: 700px) {
+  .nav-tag {
+    display: block;
   }
 }
 
@@ -528,7 +548,7 @@ body {
 }
 @media (min-width: 500px) {
   .article-topperImg {
-    max-height: 260px;
+    max-height: 300px;
   }
 }
 
@@ -793,7 +813,6 @@ body {
 .guestTease-mod:hover {
   z-index: 1;
   background-color: #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 .guestTease-mod:hover:after {
   height: 3px;
@@ -965,6 +984,7 @@ body {
 
 .aboutProfiles {
   padding: 60px 10px;
+  background: #fff;
 }
 
 @media (min-width: 700px) {
@@ -994,7 +1014,7 @@ body {
 }
 
 .aboutProfiles-width {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1041,7 +1061,6 @@ body {
 }
 
 .aboutContact {
-  min-height: 600px;
   background-color: #f2f2f2;
   padding: 60px 10px;
 }
@@ -1062,6 +1081,28 @@ body {
   .aboutContact-form > p {
     font-size: 22px;
   }
+}
+
+.success {
+  text-align: center;
+  padding: 20px;
+}
+
+.success-h {
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #333;
+}
+@media (min-width: 500px) {
+  .success-h {
+    font-size: 30px;
+  }
+}
+
+.success-img {
+  max-width: 300px;
 }
 
 #fscf_email1,
